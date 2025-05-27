@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<!-- Set up the page -->
+<head>
+    <meta charset='UTF-8'>
+    <title>Get new customer data</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<!-- Get SQL data on page load and display it -->
+<body onload="getDataAjax()">
+    <div class="container">
+        <h1>News</h1>
+
+        <!-- Country Selecter -->
+        <select id="country">
+            <option value="nz" selected="selected">NZ</option>
+            <option value="au">AU</option>
+            <option value="us">US</option>
+            <option value="gb">GB</option>
+        </select>
+
+        <!-- Active Topics -->
+        <h2>Active Topics</h2>
+        <!-- Containers to add data to from script -->
+        <div id=data class="data-container"></div>
+        <div id=info class="info-container"></div>
+
+         <!-- Inactive Topics -->
+        <h2>Inactive Topics</h2>
+        <div id="inactiveTopics" class="topic-container"></div>
+
+        <!-- Checkbox to edit topics  -->
+        <div id="updateBox">
+            <input type="checkbox" id="update">
+            <label for="radioButton">Update Articles</label>
+        </div>
+
+    </div>
+</body>
+</html>
